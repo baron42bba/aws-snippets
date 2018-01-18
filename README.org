@@ -1,0 +1,11 @@
+* aws-snippets
+yasnippet snippets for AWS CLI
+* Installation
+- clone this repository into =.emacs.d/=
+- add =(load ~/.emacs.d/aws-snippets/aws-snippets.el)= to your
+  .emacs, after you load yasnippet!
+* Disclaimer
+I use these snippets on a daily basis in Emacs [[http://orgmode.org][org-mode]], sh-mode and
+eshell-mode for [[http://www.bundesbrandschatzamt.de/~baron/blog/20150602-Literate%2520DevOps][Literate Devops Work]].
+Nonetheless with every command you use on your AWS environment:
+Check what you do! *It's your own risk*
