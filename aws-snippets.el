@@ -132,7 +132,7 @@
 (defconst aws-snippets--ec2-get-securitygroups-query
   '"sort_by(SecurityGroups, &GroupName)[*].[GroupName, GroupId, Description]")
 
-(defcustom aws-snippets-ec2-get-securitygroups-query aws-snippets--ec2-get-securitygroups
+(defcustom aws-snippets-ec2-get-securitygroups-query aws-snippets--ec2-get-securitygroups-query
   "Query string used for ec2-get-securitygroups."
   :tag "ec2-get-securitygroups-query"
   :group 'aws-snippets
