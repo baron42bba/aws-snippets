@@ -63,7 +63,7 @@
   )
 
 (defconst aws-snippets--default-filters
-  '("tag:Name" "tag:Project" "tag:Type" "tag:Cluster" "instance.group-id" "ip-address" "private-ip-address" "network-interface.subnet-id" "description" ))
+  '("tag:Name" "tag:Project" "tag:Type" "tag:Cluster" "instance.group-id" "ip-address" "private-ip-address" "network-interface.subnet-id" "description" "name"))
 
 (defcustom aws-snippets-filters aws-snippets--default-filters
   "List of AWS filters for selections."
