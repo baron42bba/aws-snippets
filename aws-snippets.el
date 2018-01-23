@@ -67,7 +67,7 @@
   )
 
 (defconst aws-snippets--default-filters
-  '("tag:Name" "tag:Project" "tag:Type" "tag:Cluster" "instance.group-id" "ip-address" "private-ip-address" "network-interface.subnet-id" "description" "name"))
+  '("tag:Name" "tag:Project" "tag:Type" "tag:Cluster" "instance.group-id" "ip-address" "private-ip-address" "network-interface.subnet-id" "description" "name" "iam-instance-profile.arn"))
 
 (defcustom aws-snippets-filters aws-snippets--default-filters
   "List of AWS filters for selections."
@@ -184,7 +184,7 @@
   )
 
 (defconst aws-snippets--ec2-list-instances-query
-  '"Reservations[].Instances[].[join(\`,\`,Tags[?Key==\`Name\`].Value),join(\`,\`,Tags[?Key==\`Schedule\`].Value),InstanceId, State.Name, PublicDnsName, InstanceType,Placement.AvailabilityZone,LaunchTime]")
+  '"Reservations[].Instances[].[Tags[?Key==\`Name\`].Value[] | [0],Tags[?Key==\`Schedule\`].Value[] | [0],InstanceId, State.Name, PublicDnsName, InstanceType,Placement.AvailabilityZone,LaunchTime]")
 
 (defcustom aws-snippets-ec2-list-instances-query aws-snippets--ec2-list-instances-query
   "Query string used for ec2 describe-instances."
