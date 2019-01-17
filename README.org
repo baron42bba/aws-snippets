@@ -1,5 +1,5 @@
 * aws-snippets
-yasnippet snippets for AWS CLI
+yasnippet snippets for AWS CLI and CloudFormation templates.
 * Installation
 - clone this repository into =.emacs.d/=
 - add =(load ~/.emacs.d/aws-snippets/aws-snippets.el)= to your
