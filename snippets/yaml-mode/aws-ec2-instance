@@ -5,7 +5,7 @@
 # expand-env: ((yas/indent-line 'auto) (yas/wrap-around-region 't))
 # --
 ${1:-}:
-    Type: "AWS::EC2::Instance"
+    Type: AWS::EC2::Instance
     Properties:
         KeyName: ${2:-},
         DisableApiTermination: ${3:$$(yas-choose-value '("true" "false"))}
