@@ -14,5 +14,5 @@ ${2:AttachVpnGateway}:
     Properties:
         VpcId: ${3:"--"}
         VpnGatewayId:
-            Ref: ${4:vgwName}
+            Ref: $1
 $0
