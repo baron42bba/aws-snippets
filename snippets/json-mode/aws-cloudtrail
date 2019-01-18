@@ -1,7 +1,7 @@
 # -*- mode: snippet -*-
 # name: aws-cloudtrail
 # key: cloudtrail
-# group: cloudformatoin
+# group: cloudformation
 # expand-env: ((yas/indent-line 'auto) (yas/wrap-around-region 't))
 # --
 "${1:cloudTrail}": {
